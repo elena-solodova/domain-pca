@@ -1,9 +1,12 @@
-
+# 1. Erstmal alles ignorieren
 /*
 
-!/data/
+# 2. AUSSER diesen Ordnern und Dateien (Whitelist)
 !/models/
 !/results/
 !/src/
 !environment.yml
-data/
+
+# 3. Bestimmte Dinge INNERHALB des erlaubten src-Ordners wieder ignorieren
+/src/.venv/
+/src/.ipynb_checkpoints/
