@@ -1,4 +1,4 @@
-# Domain-Specific PCA for Embedding Dimensionality Reduction
+# Domänenspezifische PCA zur Dimensionsreduktion von Embeddings
 
 Im Rahmen eines Experiments untersucht dieses Repository, ob **domänenspezifisch trainierte PCA-Modelle** die Retrieval-Qualität komprimierter Embedding-Vektoren im Vergleich zu einer **generischen PCA-Baseline** verbessern können. Die Analyse deckt drei Fachdomänen ab: **Medizin**, **Recht** und **Finanzwesen**.
 
