@@ -106,10 +106,3 @@ Die Notebooks müssen in der folgenden Reihenfolge ausgeführt werden:
 3. src/03_evaluation.ipynb            # Evaluation durchführen
 ```
 
-## Technologie-Stack
-
-- **Embedding-Modell:** [all-MiniLM-L6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) (384 Dimensionen)
-- **Dimensionsreduktion:** scikit-learn PCA + StandardScaler
-- **Vektorsuche:** FAISS (IndexFlatL2)
-- **Datenquellen:** Hugging Face Datasets, lokale Dateien
-- **Visualisierung:** Matplotlib, Seaborn, Plotly
