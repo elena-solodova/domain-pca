@@ -94,7 +94,7 @@ data/
 
 ### Installation
 
-Alle benötigten Pakete und Abhängigkeiten sind in der Datei `environment.yml` definiert. Die Umgebung kann mit folgendem Befehl erstellt und aktiviert werden:
+Alle benötigten Pakete und Abhängigkeiten sind in der Datei `environment.yml` definiert.
 
 ### Ausführung
 
