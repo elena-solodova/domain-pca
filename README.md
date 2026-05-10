@@ -8,7 +8,7 @@ Die Pipeline besteht aus drei aufeinander aufbauenden Schritten:
 
 1. **Embedding-Erzeugung** – Texte aus Benchmark-Datensätzen werden mit dem Modell [`all-MiniLM-L6-v2`](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) in 384-dimensionale Vektoren umgewandelt.
 2. **PCA-Training** – Für jede Domäne wird eine PCA-Pipeline (StandardScaler + PCA) auf einem 60 %-Trainings-Split trainiert. Zusätzlich wird eine generische Pipeline auf dem NQ-Datensatz trainiert.
-3. **Evaluation** – Die komprimierten Vektoren werden mittels FAISS-basiertem Retrieval über alle Dimensionsstufen (1–384) evaluiert und anhand von Retrieval-Metriken (MRR@10, NDCG@10, Precision@1, Hit Rate@10, Mean Rank, Latenz) verglichen.
+3. **Evaluation** – Die komprimierten Vektoren werden mittels FAISS-basiertem Retrieval über alle Dimensionsstufen (1–384) evaluiert und anhand von Metriken (MRR@10, NDCG@10, Precision@1, Hit Rate@10, Mean Rank, Latenz) verglichen.
 
 ## Projektstruktur
 
@@ -35,7 +35,7 @@ domain-pca/
 │   └── medicine/
 │       ├── generic/
 │       └── specific/
-├── data/                             # NICHT IM REPOSITORY ENTHALTEN (siehe Hinweis)
+├── data/                             # nicht in Repository enthalten (siehe Hinweis)
 ├── environment.yml                   # Conda-Umgebung mit allen Abhängigkeiten
 └── README.md
 ```
